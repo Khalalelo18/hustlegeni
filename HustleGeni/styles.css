@@ -1,0 +1,375 @@
+/* Base setup */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header, .main-header {
+  background-color: #009688;
+  color: white;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+header h1, .brand h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.brand .geni {
+  font-weight: 700;
+}
+
+.brand .smart {
+  color: #FFC107;
+  font-style: italic;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* CTA Buttons */
+.cta-button,
+.cta-outline {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.cta-button {
+  background-color: #FFC107;
+  color: #333;
+}
+
+.cta-outline {
+  border: 2px solid #FFC107;
+  color: white;
+}
+
+/* Layout sections */
+section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* How It Works */
+.steps, .how-it-works .steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.step {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1 1 200px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Categories */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.category {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.category:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Why Choose */
+.why ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why li {
+  background-color: #fff;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border-left: 5px solid #009688;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Service Providers */
+.provider-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.provider-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  width: 260px;
+  text-align: center;
+}
+
+/* STAR RATINGS */
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.star {
+  width: 24px;
+  height: 24px;
+  fill: #ccc;
+  transition: fill 0.2s ease-in-out;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  fill: #FFD700;
+}
+
+.star.filled {
+  fill: #FFC107;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: #FFC107;
+  text-decoration: none;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Request a Service Section */
+.request-service {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(11, 94, 215, 0.1); /* subtle blue tint */
+  font-family: 'Inter', sans-serif;
+}
+
+.request-service h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  color: #009688;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form Layout */
+#service-request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Inputs, Selects, Textareas */
+#service-request-form input,
+#service-request-form select,
+#service-request-form textarea {
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccd5e0;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.3s;
+  background-color: #f8f9fc;
+}
+
+#service-request-form input:focus,
+#service-request-form select:focus,
+#service-request-form textarea:focus {
+  border-color: #0b5ed7;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Submit Button */
+#service-request-form button {
+  background-color: #009688;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.3s;
+}
+
+#service-request-form button:hover {
+  background-color: #0849b8;
+}
+
+/* Spinner Styles */
+#spinner {
+  margin: 20px auto;
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 4px solid #ddd;
+  border-top: 4px solid #0b5ed7;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Offer Help Page Specific */
+
+.offer-help-section {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 40px auto 60px;
+  padding: 40px 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 150, 136, 0.15); /* teal shadow */
+  font-family: 'Inter', sans-serif;
+}
+
+.offer-help-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #009688;
+  margin-bottom: 30px;
+}
+
+.offer-help-section label {
+  font-weight: 600;
+  color: #00675b;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.offer-help-section input,
+.offer-help-section textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1.5px solid #b2dfdb;
+  background-color: #e0f2f1;
+  transition: border-color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.offer-help-section input:focus,
+.offer-help-section textarea:focus {
+  border-color: #004d40;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.offer-help-section button {
+  width: 100%;
+  margin-top: 32px;
+  background-color: #00796b;
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.offer-help-section button:hover {
+  background-color: #004d40;
+}
+
+/* Spinner styling for offer help page */
+
+.offer-help-section #spinner {
+  margin: 18px auto 0;
+  width: 42px;
+  height: 42px;
+  border: 4px solid #b2dfdb;
+  border-top: 4px solid #004d40;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+

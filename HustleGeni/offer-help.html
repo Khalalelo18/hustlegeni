@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Offer Help | HustleGeni</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Offer Your Services</h1>
+    <p>Let others know how you can help in your community</p>
+    <a href="index.html" class="cta-button">← Back to Home</a>
+  </header>
+
+  <section class="offer-help-section">
+    <h2>List Your Service</h2>
+    <form id="offer-help-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number (optional):</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <label for="serviceTitle">Service Title:</label>
+      <input type="text" id="serviceTitle" name="serviceTitle" placeholder="e.g. Plumber, Tutor, Delivery" required />
+
+      <label for="description">Describe Your Service:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <label for="location">Location (City/Suburb):</label>
+      <input type="text" id="location" name="location" required />
+
+      <label for="rate">Rate (optional):</label>
+      <input type="text" id="rate" name="rate" placeholder="e.g. $15/hour" />
+
+      <button type="submit">Submit Your Service</button>
+      <div id="spinner"></div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HustleGeni | <a href="about.html">About</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('offer-help-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const spinner = document.getElementById('spinner');
+      spinner.style.display = 'block';
+
+      setTimeout(() => {
+        const form = event.target;
+
+        const formData = {
+          name: form.name.value.trim(),
+          email: form.email.value.trim(),
+          phone: form.phone.value.trim(),
+          serviceTitle: form.serviceTitle.value.trim(),
+          description: form.description.value.trim(),
+          location: form.location.value.trim(),
+          rate: form.rate.value.trim()
+        };
+
+        console.log("Service Offer Submitted:", formData);
+
+        alert("Thank you for offering your help! We’ll get back to you soon.");
+
+        spinner.style.display = 'none';
+        form.reset();
+      }, 1500);
+    });
+  </script>
+</body>
+</html>

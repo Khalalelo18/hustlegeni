@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Browse Services | HustleGeni</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Browse Services</h1>
+    <p>Meet our most trusted service providers</p>
+    <a href="index.html" class="cta-button">← Back to Home</a>
+  </header>
+
+  <!-- Search & Filter -->
+  <section>
+    <div class="filter-bar">
+      <input type="text" id="searchInput" placeholder="Search by name or service..." />
+      <select id="locationFilter">
+        <option value="">All Locations</option>
+        <option value="Carletonville">Carletonville</option>
+        <option value="Welkom">Welkom</option>
+        <option value="Bloemfontein">Bloemfontein</option>
+        <option value="Limpopo">Limpopo</option>
+        <option value="Pretoria">Pretoria</option>
+        <option value="Johannesburg CBD">Johannesburg CBD</option>
+        <option value="Cape Town">Cape Town</option>
+        <option value="Maseru">Maseru</option>
+      </select>
+    </div>
+
+    <h2>Available Helpers</h2>
+    <div class="provider-grid">
+      <!-- Provider Cards -->
+      <div class="provider-card">
+        <h3>Lebo the Tech Guy 💻</h3>
+        <p>WiFi setup & PC repairs</p>
+        <p>📍 Carletonville</p>
+        <div class="stars" data-rating="0">★★★★★</div>
+        <div class="review"><strong>Review:</strong> Fast and reliable!</div>
+        <form class="review-form">
+          <input type="text" placeholder="Leave a review" />
+          <button type="submit">Submit</button>
+        </form>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+
+      <div class="provider-card">
+        <h3>Thato the Tutor 📚</h3>
+        <p>High school math and science</p>
+        <p>📍 Welkom</p>
+        <div class="stars" data-rating="0">★★★★★</div>
+        <div class="review"><strong>Review:</strong> Helped my child improve in physics.</div>
+        <form class="review-form">
+          <input type="text" placeholder="Leave a review" />
+          <button type="submit">Submit</button>
+        </form>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+
+      <div class="provider-card">
+        <h3>Sipho the Fixer 🔧</h3>
+        <p>Fast plumbing repairs</p>
+        <p>📍 Bloemfontein</p>
+        <div class="stars" data-rating="0">★★★★★</div>
+        <div class="review"><strong>Review:</strong> Fixed our sink in no time.</div>
+        <form class="review-form">
+          <input type="text" placeholder="Leave a review" />
+          <button type="submit">Submit</button>
+        </form>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+
+      <div class="provider-card">
+        <h3>Boitumelo the Cook 🍲</h3>
+        <p>Private catering & cooking lessons</p>
+        <p>📍 Limpopo</p>
+        <div class="stars" data-rating="0">★★★★★</div>
+        <div class="review"><strong>Review:</strong> Her food is always delicious!</div>
+        <form class="review-form">
+          <input type="text" placeholder="Leave a review" />
+          <button type="submit">Submit</button>
+        </form>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+
+      <div class="provider-card">
+        <h3>Tebogo the Designer 🎨</h3>
+        <p>Posters, logos & branding</p>
+        <p>📍 Pretoria</p>
+        <div class="stars" data-rating="0">★★★★★</div>
+        <div class="review"><strong>Review:</strong> Made my event posters pop!</div>
+        <form class="review-form">
+          <input type="text" placeholder="Leave a review" />
+          <button type="submit">Submit</button>
+        </form>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+
+      <div class="provider-card">
+        <h3>Naleli the Cleaner 🧹</h3>
+        <p>Affordable house & office cleaning</p>
+        <p>📍 Johannesburg CBD</p>
+        <div class="stars" data-rating="0">★★★★★</div>
+        <div class="review"><strong>Review:</strong> My house has never been this clean!</div>
+        <form class="review-form">
+          <input type="text" placeholder="Leave a review" />
+          <button type="submit">Submit</button>
+        </form>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+
+      <div class="provider-card">
+        <h3>Keitumetse the Nanny 🧸</h3>
+        <p>Reliable child care services</p>
+        <p>📍 Maseru</p>
+        <div class="stars" data-rating="0">★★★★★</div>
+        <div class="review"><strong>Review:</strong> My kids love her!</div>
+        <form class="review-form">
+          <input type="text" placeholder="Leave a review" />
+          <button type="submit">Submit</button>
+        </form>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+
+      <div class="provider-card">
+        <h3>Thuli the Braider 💇🏾‍♀️</h3>
+        <p>Protective & stylish hair braiding</p>
+        <p>📍 Cape Town</p>
+        <div class="stars" data-rating="0">★★★★★</div>
+        <div class="review"><strong>Review:</strong> My cornrows lasted 4 weeks!</div>
+        <form class="review-form">
+          <input type="text" placeholder="Leave a review" />
+          <button type="submit">Submit</button>
+        </form>
+        <a href="#" class="cta-button">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="request-service">
+    <h2>Can't find what you're looking for? Request a Service</h2>
+    <form id="service-request-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="service">Service Needed:</label>
+      <input type="text" id="service" name="service" required>
+
+      <label for="location">Your Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="details">Additional Details:</label>
+      <textarea id="details" name="details" rows="4"></textarea>
+
+      <button type="submit">Submit Request</button>
+      <div class="spinner" id="spinner" style="display: none;"></div>
+    </form>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 HustleGeni | <a href="about.html">About</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+
+  <script>
+    // Search & Filter
+    const searchInput = document.getElementById('searchInput');
+    const locationFilter = document.getElementById('locationFilter');
+    const providerCards = document.querySelectorAll('.provider-card');
+
+    function filterProviders() {
+      const searchText = searchInput.value.toLowerCase();
+      const selectedLocation = locationFilter.value;
+
+      providerCards.forEach(card => {
+        const name = card.querySelector('h3').textContent.toLowerCase();
+        const service = card.querySelector('p').textContent.toLowerCase();
+        const location = card.querySelectorAll('p')[1].textContent;
+
+        const matchesSearch = name.includes(searchText) || service.includes(searchText);
+        const matchesLocation = !selectedLocation || location.includes(selectedLocation);
+
+        card.style.display = (matchesSearch && matchesLocation) ? 'block' : 'none';
+      });
+    }
+
+    searchInput.addEventListener('input', filterProviders);
+    locationFilter.addEventListener('change', filterProviders);
+
+    // Ratings
+    document.querySelectorAll('.stars').forEach(starsEl => {
+      starsEl.innerHTML = '';
+      for (let i = 1; i <= 5; i++) {
+        const star = document.createElement('span');
+        star.innerHTML = '★';
+        star.style.cursor = 'pointer';
+        star.dataset.value = i;
+        star.addEventListener('click', function () {
+          starsEl.dataset.rating = i;
+          updateStars(starsEl);
+        });
+        starsEl.appendChild(star);
+      }
+      updateStars(starsEl);
+    });
+
+    function updateStars(starsEl) {
+      const rating = parseInt(starsEl.dataset.rating);
+      const stars = starsEl.querySelectorAll('span');
+      stars.forEach((star, index) => {
+        star.style.color = index < rating ? '#ffc107' : '#ccc';
+      });
+    }
+
+    // Review Form Handling
+    document.querySelectorAll('.review-form').forEach(form => {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const input = form.querySelector('input');
+        const reviewText = input.value.trim();
+        if (reviewText !== '') {
+          const reviewDiv = form.previousElementSibling;
+          reviewDiv.innerHTML = `<strong>Review:</strong> ${reviewText}`;
+          input.value = '';
+        }
+      });
+    });
+  </script>
+
+  <script>
+  document.getElementById('service-request-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const spinner = document.getElementById('spinner');
+    spinner.style.display = 'block'; // Show spinner
+
+    // Simulate network request (2 seconds)
+    setTimeout(() => {
+      // Get form data
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const service = document.getElementById('service').value;
+      const location = document.getElementById('location').value;
+      const details = document.getElementById('details').value;
+
+      console.log("Service Request Submitted:");
+      console.log("Name:", name);
+      console.log("Email:", email);
+      console.log("Service Needed:", service);
+      console.log("Location:", location);
+      console.log("Details:", details);
+
+      alert("Thank you! Your service request has been submitted.");
+
+      spinner.style.display = 'none'; // Hide spinner
+      this.reset(); // Reset form
+    }, 2000);
+  });
+</script>
+
+
+  
+</body>
+</html>
